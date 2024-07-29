@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <h1>Contact Details</h1>
+    <strong>Phone</strong> <br> +8801642253132 <br> <br>
+    <strong>Email</strong> <br> abaanas.ayub2002@gmail.com <br> <br>
+    <strong>Address</strong> <br> Islamia school road, Gulshan-2, Dhaka-1212.
+    <br>
+    <hr>
+    <h2>Give Your Details Here</h2>
+    <form action="mailto:abaanas.ayub2002@gmail.com" method="post" enctype="text/plain">
+        <div>
+            <label for="fullname">Full Name: </label>
+            <input type="text" name="fullname" id="fullname" required>
+            <!--"required" attributr: User full name na dile register korte parbe na-->
+        </div> <br>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <!--"required" attributr: User full name na dile register korte parbe na-->
+        </div> <br>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" required>
+            <!--"required" attributr: User full name na dile register korte parbe na-->
+        </div> <br>
+
+        <div>
+            <label for="dob">Date of Birth: </label><input type="date" name="dob" id="dob">
+        </div> <br>
+
+        <div>
+            <label for="photo">Choose your Photo: </label><input type="file" name="photo" id="photo">
+        </div> <br>
+
+        <div>
+            <!--Initialy selecteed kore rakhar jonno "Checked" likhi-->
+            <label for="gender">Gender: </label>
+            <input checked type="radio" name="gender" id="gender" value="male"> Male
+            <input type="radio" name="gender" id="gender" value="female"> Female
+        </div> <br>
+
+        <div>
+            <!--Initialy selecteed kore rakhar jonno "Checked" likhi-->
+            <label for="religion">Religion: </label>
+            <input checked type="checkbox" name="religion" id="religion" value="islam"> Islam
+            <input type="checkbox" name="religion" id="religion" value="hindu"> Hindu
+        </div> <br>
+
+        <!--Dropdown manue create-->
+        <div>
+            <!--Initialy selecteed kore rakhar jonno "selected" likhi-->
+            <label for="department">Department: </label>
+            <select name="department" id="department">
+                <option value="cse" selected>CSE</option>
+                <option value="eee">EEE</option>
+                <option value="llb">LLB</option>
+            </select>
+        </div> <br>
+
+        <!-- Text Area Create -->
+        <div>
+            <label for="comment">Comment: </label> <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div> <br>
+
+        <!-- Button -->
+        <div>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="CLEAR">
+        </div> <br>
+    </form>
+</body>
+
+</html>
